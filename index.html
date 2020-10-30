@@ -32,11 +32,36 @@
       href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      .wrapper {
+        position: fixed;
+        background: transparent;
+        width: 40vw;
+        height: 55vh;
+        z-index: 1;
+        top: 0;
+        left: 0;
+      }
+      .logo-svg {
+        position: relative;
+        left: 100%;
+        top: 50%;
+        margin: -75px 0px 0px -75px;
+        width: 25vw;
+      }
+    </style>
+    <script>
+      window.console = window.console || function (t) {};
+    </script>
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
 
     <!-- =======================================================
   * Template Name: Regna - v2.1.0
@@ -51,9 +76,14 @@
     <header id="header" class="header-transparent">
       <div class="container">
         <div id="logo" class="pull-left">
-          <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+          <a href="index.html"
+            ><img
+              style="width: 60px; margin-top: -12px;"
+              src="assets/img/FLogo.png"
+              alt=""
+          /></a>
           <!-- Uncomment below if you prefer to use a text logo -->
-          <!--<h1><a href="#hero">Regna</a></h1>-->
+          <!-- <h1><a href="index.html">AAO</a></h1> -->
         </div>
 
         <nav id="nav-menu-container">
@@ -62,7 +92,7 @@
             <li><a href="#about">About Us</a></li>
             <li><a href="./Work.html">Work</a></li>
             <li><a href="./Team.html">Team</a></li>
-            <li><a href="#team">Reference</a></li>
+            <li><a href="./Reference.html">Reference</a></li>
 
             <li><a href="#contact">Contact Us</a></li>
           </ul>
@@ -71,17 +101,19 @@
       </div>
     </header>
     <!-- End Header -->
-
+    <div class="wrapper">
+      <img class="logo-svg" src="assets/img/FLogo.png" />
+    </div>
     <!-- ======= Hero Section ======= -->
     <section id="hero">
       <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-        <h1>Welcome to AA</h1>
-        <h2>
+        <h1>Welcome to AAO</h1>
+        <h2 style="width: 75%;">
           Driving revenues with data, analytics and automation in all aspects of
           the task force business. AAO is an autonomous initiative currently
           covering Business, Sales and Outreach.
         </h2>
-        <a href="#about" class="btn-get-started">Get Started</a>
+        <a href="./About.html" class="btn-get-started">Get Started</a>
       </div>
     </section>
     <!-- End Hero Section -->
@@ -112,6 +144,27 @@
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
     <!-- Vendor JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+    <script id="rendered-js">
+      var tl = new TimelineMax({});
+      tl.add(
+        TweenMax.from(".logo-svg", 3, {
+          scale: 0.5,
+          rotation: 180,
+          ease: Elastic.easeInOut
+        })
+      );
+
+      tl.add(
+        TweenMax.to(".logo-svg", 3, {
+          scale: 0,
+          rotation: 180,
+          opacity: 0,
+          ease: Elastic.easeInOut
+        })
+      );
+    </script>
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>

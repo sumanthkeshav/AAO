@@ -8,9 +8,19 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.accordion .card-header:after {
+  font-family: "FontAwesome";
+  content: "\f068";
+  float: right;
+}
+.accordion .card-header.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\f067";
+}
+
 body {
   background: #fff;
-  color: #666666;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -1197,8 +1207,8 @@ section {
   padding: 20px 0;
   color: #fff;
   font-size: 14px;
-  /* position: absolute;
-  bottom: 0; */
+  /* position: absolute; */
+  bottom: 0;
   width: 100%;
 }
 
