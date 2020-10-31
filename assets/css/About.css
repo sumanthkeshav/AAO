@@ -1,5 +1,6 @@
 .body {
   font-family: "Monserrat";
+  background-color: white;
 }
 
 h1 {
@@ -30,7 +31,8 @@ p {
 
 .intro {
   text-align: center;
-  padding: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .intro h3 {
@@ -40,6 +42,7 @@ p {
 /* Scope Section */
 .scope-desc {
   text-align: center;
+  background-color: white;
 }
 
 /* Mid Section */
