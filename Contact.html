@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Regna Bootstrap Template</title>
+    <title>AAO Contact Us Page</title>
     <meta content="" name="descriptison" />
     <meta content="" name="keywords" />
 
@@ -15,6 +15,10 @@
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu&display=swap"
       rel="stylesheet"
     />
 
@@ -40,7 +44,7 @@
     <style>
       body {
         padding-top: 100px;
-        background: "url(../img/about-img.jpg) center top no-repeat";
+        /* background: "url(../img/about-img.jpg) center top no-repeat"; */
       }
       textarea {
         resize: none;
@@ -53,11 +57,11 @@
         color: rgb(31, 6, 141) !important;
         transition: background-color 5000s ease-in-out 0s;
 
-        -webkit-text-fill-color: #fff !important;
+        -webkit-text-fill-color: #000 !important;
       }
       .form-label {
         font-size: 12px;
-        color: #5e9bfc;
+        color: #387ed1;
         margin: 0;
         display: block;
         opacity: 1;
@@ -65,7 +69,7 @@
         transition: 0.333s ease top, 0.333s ease opacity;
       }
       .form-control {
-        color: #fff;
+        color: #424242;
         background: transparent;
         border-radius: 0;
         border-color: #ccc;
@@ -74,10 +78,10 @@
         box-shadow: none;
       }
       .form-control:focus {
-        color: #fff;
+        color: #424242;
         background: transparent;
         box-shadow: none;
-        border-color: #5e9bfc;
+        border-color: #387ed1;
       }
       .js-hide-label {
         background: transparent;
@@ -99,31 +103,29 @@
         padding: 10px 50px;
         text-transform: uppercase;
         transition: all 0.25s ease 0s;
+        border-color: #387ed1;
+        color: #387ed1;
+        border: 2px solid #387ed1;
       }
       .btn-start-order:hover,
       .btn-start-order:active,
       .btn-start-order:focus {
-        border-color: #5e9bfc;
-        color: #5e9bfc;
+        background-color: #387ed1;
+        color: white;
+        border: 2px solid #fff;
       }
     </style>
   </head>
 
-  <body
-    style="
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-image: url(https://blogimg.goo.ne.jp/user_image/43/3c/76dfd25d2fe51e84ebb236cb27a207d6.jpg);
-    "
-  >
+  <body>
     <!-- ======= Header ======= -->
     <header id="header" class="header-transparent">
       <div class="container">
         <div id="logo" class="pull-left">
           <a href="index.html"
             ><img
-              style="width: 60px; margin-top: -12px;"
-              src="assets/img/FLogo.png"
+              style="width: 60px; margin-top: 0;"
+              src="assets/img/FLogo.PNG"
               alt=""
           /></a>
           <!-- Uncomment below if you prefer to use a text logo -->
@@ -156,7 +158,8 @@
       <div class="row d-flex justify-content-around">
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
           <form
-            action="https://formspree.io/f/xwkwboqr"
+            onsubmit="myFunction()"
+            action="https://formsubmit.co/941fee28f1556218a6bec06963f7fc99 "
             method="POST"
             id="contact-form"
             class="form"
@@ -271,6 +274,10 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script>
+      // function myFunction() {
+      //   window.location = "./index.html";
+      //   console.log("form submitted", window.location);
+      // }
       $(document).ready(function () {
         $.support.placeholder = (function () {
           var i = document.createElement("input");
