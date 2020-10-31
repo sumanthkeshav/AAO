@@ -72,8 +72,15 @@
   </head>
 
   <body>
+    <div class="wrapper">
+      <img class="logo-svg" src="assets/img/FLogo.png" />
+    </div>
     <!-- ======= Header ======= -->
-    <header id="header" class="header-transparent">
+    <header
+      style="transition-delay: 10s;"
+      id="header"
+      class="header-transparent"
+    >
       <div class="container">
         <div id="logo" class="pull-left">
           <a href="index.html"
@@ -101,9 +108,7 @@
       </div>
     </header>
     <!-- End Header -->
-    <div class="wrapper">
-      <img class="logo-svg" src="assets/img/FLogo.png" />
-    </div>
+
     <!-- ======= Hero Section ======= -->
     <section id="hero">
       <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
@@ -150,8 +155,9 @@
       var tl = new TimelineMax({});
       tl.add(
         TweenMax.from(".logo-svg", 3, {
-          scale: 0.5,
+          scale: 0,
           rotation: 180,
+          opacity: 0,
           ease: Elastic.easeInOut
         })
       );
@@ -161,6 +167,8 @@
           scale: 0,
           rotation: 180,
           opacity: 0,
+          left: 0.5,
+          top: 0.5,
           ease: Elastic.easeInOut
         })
       );
