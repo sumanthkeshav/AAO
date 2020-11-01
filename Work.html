@@ -7,8 +7,6 @@
     <title>AAO Work Page</title>
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link
@@ -39,6 +37,13 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
       body {
         padding-top: 100px;
@@ -74,7 +79,53 @@
           flex: 0 0 24%;
         }
       }
+      .card-deck {
+        margin: 0 -15px;
+        justify-content: space-between;
+      }
+
+      .card-deck .card {
+        margin: 0 0 1rem;
+      }
+
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        .card-deck .card {
+          -ms-flex: 0 0 48.7%;
+          flex: 0 0 48.7%;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .card-deck .card {
+          -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .card-deck .card {
+          -ms-flex: 0 0 24%;
+          flex: 0 0 24%;
+        }
+      }
     </style>
+    <script>
+      $(document).ready(function () {
+        // executes when HTML-Document is loaded and DOM is ready
+        console.log("document is ready");
+
+        $(".card").hover(
+          function () {
+            $(this).addClass("shadow").css("cursor", "pointer");
+          },
+          function () {
+            $(this).removeClass("shadow");
+          }
+        );
+
+        // document ready
+      });
+    </script>
     <script>
       $(document).ready(function () {
         $(".card").hover(
@@ -89,12 +140,6 @@
         // document ready
       });
     </script>
-    <!-- =======================================================
-  * Template Name: Regna - v2.1.0
-  * Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body>
