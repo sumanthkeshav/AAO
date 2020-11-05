@@ -10,7 +10,6 @@
 
     <!-- Favicons -->
 
-
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
@@ -135,8 +134,8 @@
           <ul class="nav-menu">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./About.html">About Us</a></li>
-            <li><a href="./Work.html">Work</a></li>
-            <li><a href="./Team.html">Team</a></li>
+            <li><a href="./Work.html">Book of Work</a></li>
+            <li><a href="./Team.html">People</a></li>
             <li><a href="./Reference.html">Reference</a></li>
 
             <li class="menu-active"><a href="./Contact.html">Contact Us</a></li>
@@ -148,7 +147,7 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <div class=" flex-column">
+    <div class="flex-column">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
           <h2>Contact</h2>
@@ -167,7 +166,7 @@
             role="form"
             autocomplete="off"
           >
-            <div class="form-group">
+            <!-- <div class="form-group">
               <input
                 type="hidden"
                 name="_next"
@@ -183,19 +182,41 @@
                 tabindex="1"
                 required
               />
+            </div> -->
+            <div class="form-group">
+              <label class="form-label" for="first_name">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="first_name"
+                name="first_name"
+                placeholder="First Name"
+                tabindex="1"
+              />
             </div>
             <div class="form-group">
-              <!-- <label class="form-label" for="email">Your Email</label>
+              <label class="form-label" for="last_name">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="last_name"
+                name="last_name"
+                placeholder="Last Name"
+                tabindex="2"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
               <input
                 type="email"
                 class="form-control"
                 id="email"
                 name="email"
-                placeholder="Your Email"
-                tabindex="2"
+                placeholder="Email"
+                tabindex="3"
                 required
               />
-            </div> -->
+            </div>
             <div class="form-group">
               <label class="form-label" for="subject">Subject</label>
               <input
@@ -204,7 +225,7 @@
                 id="subject"
                 name="subject"
                 placeholder="Subject"
-                tabindex="3"
+                tabindex="4"
               />
             </div>
             <div class="form-group">
@@ -216,13 +237,13 @@
                 class="form-control"
                 id="message"
                 placeholder="Message..."
-                tabindex="4"
+                tabindex="5"
                 required
               ></textarea>
             </div>
             <div class="text-center">
               <button type="submit" class="btn btn-start-order">
-                Request Demo
+                Send Request
               </button>
             </div>
           </form>
@@ -232,8 +253,8 @@
     <!-- End Hero Section -->
 
     <!-- ======= Footer ======= -->
-    <footer  id="footer">  
-      <div >
+    <footer id="footer">
+      <div>
         <div class="copyright">
           &copy; Copyright <strong>AAO</strong>. All Rights Reserved
         </div>
@@ -243,7 +264,7 @@
       </div>
     </footer>
     <!-- End Footer -->
-    
+
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
     <!-- Vendor JS Files -->
@@ -318,4 +339,3 @@
     </script>
   </body>
 </html>
-

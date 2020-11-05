@@ -110,8 +110,8 @@
           <ul class="nav-menu" >
             <li><a href="./index.html">Home</a></li>
             <li class="menu-active"><a href="./About.html">About Us</a></li>
-            <li><a href="./Work.html">Work</a></li>
-            <li><a href="./Team.html">Team</a></li>
+            <li><a href="./Work.html">Book of Work</a></li>
+            <li><a href="./Team.html">People</a></li>
             <li><a href="./Reference.html">Reference</a></li>
             <li><a href="./Contact.html">Contact Us</a></li>
           </ul>
@@ -165,11 +165,10 @@
       <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="page-header">
+              <div class="page-header" style="text-align: center;">
                 <h1>Horizontal timeline</h1>
-    
               </div>
-              <div style="display: inline-block; width: 100%; overflow-y: auto">
+              <div style="display: inline-block; width: 100%; overflow-y: auto; overflow-x: hidden">
                 <ul class="timeline timeline-horizontal">
                   <li class="timeline-item">
                     <div class="timeline-badge primary">
@@ -180,9 +179,7 @@
                         <h4 class="timeline-title">Mussum ipsum cacilds 1</h4>
                         <p>
                           <small class="text-muted"
-                            ><i class="far fa-clock"></i> 11 hours ago
-                            via Twitter</small
-                          >
+                            ><i class="far fa-clock"></i> Date 1</small>
                         </p>
                       </div>
                       <div class="timeline-body">
@@ -202,9 +199,7 @@
                         <h4 class="timeline-title">Mussum ipsum cacilds 2</h4>
                         <p>
                           <small class="text-muted"
-                            ><i class="far fa-clock"></i> 11 hours ago
-                            via Twitter</small
-                          >
+                            ><i class="far fa-clock"></i> Date 2</small>
                         </p>
                       </div>
                       <div class="timeline-body">
@@ -224,9 +219,7 @@
                         <h4 class="timeline-title">Mussum ipsum cacilds 3</h4>
                         <p>
                           <small class="text-muted"
-                            ><i class="far fa-clock"></i> 11 hours ago
-                            via Twitter</small
-                          >
+                            ><i class="far fa-clock"></i> Date 3</small>
                         </p>
                       </div>
                       <div class="timeline-body">
@@ -237,7 +230,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="timeline-item">
+                  <!-- <li class="timeline-item">
                     <div class="timeline-badge danger">
                         <i class="far fa-check-square"></i>
                     </div>
@@ -305,24 +298,38 @@
                         </p>
                       </div>
                     </div>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </div>
           </div>
           </div>
         </div>
-  <!-- doughnut here -->
-        <div    class="false-For-Bottom-Text container">
-            <div style="margin-top: 50px" class="page-header">
-                <h1>Impacts</h1>
-    
-              </div>
-            <div style=" margin: 100px auto; width: 50vw; display: block; display: flex; justify-content: center" class="mypiechart">
-              <canvas id="myCanvas" width="300" height="300"></canvas>
-            </div>
+  <!-- Impact Section here -->
+          <div class="scope-desc">
+              <h2 class="scope">Impacts</h2>
           </div>
-      
+         
+          <section id="features">
+            <div class="row">
+              <div class="feature col-lg-4">
+                <i class="icons fas fa-book-open fa-5x"></i>
+                <h3>Book of Work</h3>
+                <p>known printer took a galley of type and scrambled it to make a type specimen book. It  </p>
+              </div>
+              <div class="feature col-lg-4">
+                <i class="icons fas fa-money-bill-wave fa-5x"></i>
+                <h3>Money</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+              <div class="feature col-lg-4">
+                <i class="icons fas fa-user-friends fa-5x"></i>
+                <h3>People Outlive</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+            </div>
+          </section>
+
           <script type="text/javascript">
             var obj = {
               text: ["Sample ", "Data", "Displayed", "Here"],

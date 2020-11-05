@@ -41,13 +41,14 @@ p {
 
 /* Scope Section */
 .scope-desc {
+  margin-top: 30px;
   text-align: center;
   background-color: white;
 }
 
 /* Mid Section */
 #features {
-  padding: 0 15% 7%;
+  padding: 0 15%;
   background-color: white;
   position: relative;
 }
